@@ -43,7 +43,7 @@ CREATE TABLE radacct (
 	Class			VARCHAR(64)
 );
 
-CREATE UNIUQE INDEX radacct_idx0
+CREATE UNIQUE INDEX radacct_idx0
 	ON radacct(acctuniqueid);
 CREATE UNIQUE INDEX radacct_idx1
 	ON radacct(acctsessionid,username,acctstarttime,
